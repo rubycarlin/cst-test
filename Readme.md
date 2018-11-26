@@ -2,6 +2,7 @@
 
 ## Build and Run
 mvn clean install
+
 mvn exec:java -Dexec.args="server csttest.yml"
 
 ## Run Mock SQS
