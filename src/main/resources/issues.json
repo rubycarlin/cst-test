@@ -1,0 +1,57 @@
+{
+  "port": 4553,
+  "protocol": "http",
+  "stubs": [
+    {
+      "responses": [
+        {
+          "is": {
+            "statusCode": 200,
+            "body": "[{\"issueKey\": \"TEST-1\",\"fields\": {\"storyPoints\": 1}},{\"issueKey\": \"TEST-2\",\"fields\": {\"storyPoints\": 2}}]"
+          }
+        }
+      ],
+      "predicates": [
+        {
+          "and": [
+            {
+              "equals": {
+                "method": "GET"
+              }
+            },
+            {
+              "equals": {
+                "path": "/rest/api/2/search"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "responses": [
+        {
+          "is": {
+            "statusCode": 200
+          }
+        }
+      ],
+      "predicates": [
+        {
+          "and": [
+            {
+              "equals": {
+                "method": "GET"
+              }
+            },
+            {
+              "equals": {
+                "path": "path"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

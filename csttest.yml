@@ -1,0 +1,2 @@
+jiraUrl : ${JIRA_BASE_URL}
+queueUrl : ${QUEUE_URL}
