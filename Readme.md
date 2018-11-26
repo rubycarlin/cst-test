@@ -1,6 +1,10 @@
 #cst test
 
 ## Build and Run
+export QUEUE_URL=http://localhost:9324
+
+export JIRA_BASE_URL=http://localhost:4553
+
 mvn clean install
 
 mvn exec:java -Dexec.args="server csttest.yml"
